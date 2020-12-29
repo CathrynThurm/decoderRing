@@ -1,3 +1,4 @@
+// Global variables that are used in multiple functions
 const grid =
 {
   '11': 'a', '21': 'b', '31': 'c', '41': 'd', '51': 'e',
@@ -21,7 +22,7 @@ function polybius(input, encode = true) {
   return result
 }
 
-// encode func
+// encode func that gets called when the encode param in polybius is true
 function encodeFunc(input) {
   result = ""
 
@@ -34,8 +35,7 @@ function encodeFunc(input) {
   return result
 }
 
-// deconde func
-
+// deconde func gets called when the encode param in polybius is false
 function decodeFunc(input) {
   let newVar = ""
   result = ""
@@ -56,6 +56,7 @@ function decodeFunc(input) {
   return result
 }
 
+// function that checkes weather an inputted string has odd or even characters in is
 function isEven(input) {
   let sum = 0
 
