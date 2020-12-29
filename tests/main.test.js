@@ -3,6 +3,7 @@ const caesar = require("../src/caesar")
 const substitution = require("../src/substitution")
 const expect = require("chai").expect
 
+// This code tests the caesar.js file and function
 describe("caesar", () => {
     it("Returns false if the shift input is not present", () => {
         const actual = caesar("thinkful")
@@ -57,6 +58,8 @@ describe("caesar", () => {
     })
 })
 
+
+// This code tests the polybius.js file and function
 describe("polybius", () => {
     it("Should convert the inputted message to their corresponding grid number.", () => {
         const actual = polybius("thinkful")
@@ -99,6 +102,8 @@ describe("polybius", () => {
     })
 })
 
+
+// This code tests the substitution.js file and function
 describe("substitution", () => {
     it("Should return false if the inputted alphabet is not exactly 26 letters long.", () => {
         const actual = substitution("Hello", "asdfgkh")
